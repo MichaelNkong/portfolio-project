@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive PortFolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="ext.js" language="javascript"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+</head>
+<body>
+    <!-- Creating Menu Tabs & Logo at Top Using HTML -->
+    <header>
+        <a href="#" class="logo">Portfolio</a>
+        <div class="toggle" onclick="toggleMenu();"></div>
+        <ul class="menu">
+            <li><a href="#home" onclick="toggleMenu();">Home</a></li>
+            <li><a href="#about" onclick="toggleMenu();">About</a></li>
+            <li><a href="#services" onclick="toggleMenu();">Skills</a></li>
+            <li><a href="#work" onclick="toggleMenu();">Projects</a></li>
+            <li><a href="#testimonial" onclick="toggleMenu();">Education</a></li>
+            <li><a href="#contact" onclick="toggleMenu();">Contact</a></li>
+        </ul>
+    </header>
+
+    <!-- Creating Banner Layout in HTML -->
+    <section class="banner" id="home">
+        <div class="textBx">
+            <h2>Hello, I'm<br> <span>M. Ndip Nkongho</span></h2>
+            <h3>I'm a Software Tester and a Junior Java Webentwickler</h3>
+            <a href="#about" class="btn">About Me</a>
+        </div>
+        
+    </section>
+
+    <!-- Creating About Me Layout in HTML -->
+    <section class="about" id="about">
+        <div class="heading">
+            <p>Get to Know me</p>
+            <h2>About Me</h2>
+        </div>
+        <div class="content">
+            <div class="w50">
+                <img src="images/pic.jpg" alt="" class="proPic">
+            </div>
+            <div class="contentBx w50">
+                <h3>Who am I?</h3>
+                <h2>I'm <b>M. Ndip Nkongho</b>, a Junior Java Backend Webdeveloper and a Software Tester</h2>
+                <p>I am passionate about Webdevelopment. After finishing my bachelor Studies in Software Engineering, I started developing Spring Boot/Spring Backend applications. I also connected these Spring Boot Backend applications to the Fronténd with ReactJs. Besides , I am also a  Softwaretester. I have a profound industry-experience in Software testing.</p><br>
+                <p>I am Junior Software Tester with a B.Sc in Computer Engineering from the university of Duisburg-Essen. I have learned functional and non-functional testing during my software testing training (ISTQB Foundation Level). I have wriiten test cases for manual execution and reported bugs using Jira. I have good knowledge in test automation using selenium webdriver.</p>
+                <div class="heading bottom">
+                    <a href="images/lebenslauf_nkongho.pdf" class="btn round">Download CV</a>
+                    <div class="bt">
+                        <b>Name:</b> M. Ndip Nkongho<br>
+                        <b>Age:</b> 30
+                    </div>
+                    <div class="bt">
+                        <b>Email:</b> michael_nkongho@yahoo.com<br>
+                        <b>Location:</b> Essen
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Creating Services Layout in HTML -->
+    <section class="services" id="services">
+        <div class="heading white">
+            <h2>My Skills</h2>
+            <p>I offer the following skills and experiences</p>
+        </div>
+        <div class="content">
+            <div class="servicesBx">
+                
+                <i class="fa fa-java fa-4x"></i>
+                <h3>Java</h3> 
+                <p>I have extensive knowledge in the development of Rest Services with the help of Spring Boot and Spring</p>
+            </div>
+            <div class="servicesBx">
+                
+                <h3>  ReactJs</h3>
+                <p>I am a Junior frontend programmer with ReactJs</p>
+            </div>
+            <div class="servicesBx">
+            
+                <h3>PHP </h3>
+                <p>I have good knowledge in Web development with PHP. Connection of frontend to backend using PHP</p>
+            </div>
+            <div class="servicesBx">
+                <i class="fa fa-joomla fa-4x"></i>
+                <h3>Software Tester</h3>
+                <p>I am a software Tester. I have good knowledge in writing test cases, execution and reporting of bugs using Jira. During my work as a working Student. </p>
+            </div>
+    
+        </div>
+    </section>
+
+    <!-- Creating Work Layout in HTML -->
+
+    <section class="work" id="work">
+        <div class="heading">
+            <h2>My Pojects</h2>
+            <p>Showcasing some of my <b>university and personal projects on Github</b></p>
+        </div>
+        <div class="content">
+            <div class="workBx">
+                <a href="https://michaelnkong.github.io/Shopping-List/" target="_blank">
+                    <p>Creating a Shopping List using Javascript, CSS and HTML</p>
+                </a>
+            </div>
+            <div class="workBx">
+                <a href="https://github.com/MichaelNkong/michael-employee-admin-react-app" target="_blank">
+              <p>Employee Management Application</p>
+                </a>
+            </div>
+            <div class="workBx">
+                <a href="https://github.com/MichaelNkong/projectfunder" target="_blank">
+
+                    <p>A Project funder application using Html, PHP</p>
+                </a>
+            </div>
+            <div class="workBx">
+                <a href="#" target="_blank">
+                    <img src="images/webCourse.jpg" alt="">
+                    <p>An Expense Tracking Application</p>
+                </a>
+            </div>
+            
+            
+            <div class="heading">
+                <a href="https://github.com/MichaelNkong?tab=repositories" target="_blank" class="btn" style="color:#fff;">View All My Projects</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Creating Testimonial Layout in HTML -->
+    <section class="testimonial" id="testimonial">
+        <div class="heading white">
+            <h2>Education</h2>
+            <p>My Educational Background</p>
+        </div>
+        <div class="content">
+            <div class="testimonialBx">
+                <p>I am a graduate from the university of Duisburg-Essen with a B.Sc in Computer Engineering. During my studies I did courses like: Software technology, Database systems, C++ Programming, Java Programming,Matlab, Communication in computer networks, Embedded Systems and Real-time systems, Data structure and Algorithms. All these courses had impacted me with the necessary skills needed as a Webentwickler and Software Tester.</p>
+                
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- Creating Contact Layout in HTML -->
+    <section class="contact" id="contact">
+        <div class="heading white">
+            <p>Feel free to contact me anytimes</p>
+            <h2>Get in Touch</h2>
+        </div>
+        <div class="content">
+            <div class="contactInfo">
+                <h3>Contact Info</h3>
+                <p>Always available for freelance work if the right project<br> comes along, Feel free to contact me!</p>
+                <div class="contactInfoBx">
+                    <div class="box">
+                        <div class="icon">
+                            <i class="fa fa-map-marker"></i>
+                        </div>
+                        <div class="text">
+                            <h3>Address</h3>
+                            <p>Schonnefeld straße,<br>45326 Essen<br>Nordrhein westphalen<br>Deutschland</p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="icon">
+                            <i class="fa fa-phone"></i>
+                        </div>
+                        <div class="text">
+                            <h3>Phone no :</h3>
+                            <p>+4917645781174</p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="icon">
+                            <i class="fa fa-envelope-o"></i>
+                        </div>
+                        <div class="text">
+                            <h3>Email Address</h3>
+                            <p>michael_nkongho@yahoo.com</p>
+                        </div>
+                    </div>
+                    <br>
+                    <h3>Social Connect</h3>
+                    <div class="boxSocial">
+                        <div class="icon">
+                            <a href="https://www.facebook.com" target="_blank">
+                                <i class="fa fa-facebook-square"></i>
+                            </a>
+                        </div>
+                        <div class="icon">
+                            <a href="https://www.twitter.com" target="_blank">
+                                <i class="fa fa-twitter-square"></i>
+                            </a>
+                        </div>
+                        <div class="icon">
+                            <a href="https://www.linkedin.com/" target="_blank">
+                                <i class="fa fa-linkedin-square"></i>
+                            </a>
+                        </div>
+                        <div class="icon">
+                            <a href="https://www.instagram.com/?hl=en" target="_blank">
+                                <i class="fa fa-instagram"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="formBx">
+                <form>
+                    <h3>Message Me</h3>
+                    <input type="text" placeholder="Full Name" name="">
+                    <input type="email" placeholder="Email" name="">
+                    <textarea name="" rows="6" id="" placeholder="Your Message"></textarea>
+                    <input type="submit" value="Send Message" name="">
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Creating Footer Layout in HTML -->
+    <footer class="copyright">
+        <p>&copy; 2021, Yourwebsite.com, Allrights reserved</p>
+    </footer>
+</body>
+</html>

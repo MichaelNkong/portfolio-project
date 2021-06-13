@@ -396,7 +396,7 @@ footer.copyright{
         padding:20px 50px;
 		z-index:2;
     }
-    header .menu{
+    header.menu{
         display:none;
         z-index:1;
     }
